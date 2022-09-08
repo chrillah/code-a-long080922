@@ -135,3 +135,18 @@ body, html{
     font-weight: 900;
     text-decoration: underline;
 }
+
+/*Only visible in responsive mode, handled by javascript*/
+.toggle-button{
+    /*When using the absolute value on the position property, you have to specify position with top, right*/
+    position: absolute;
+    top:.75rem;
+    right: 1rem;
+    /*This setting will not display this content*/
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+}
+
+/*Above validated 2022-09-08 11:52*/
