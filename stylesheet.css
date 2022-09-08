@@ -4,8 +4,8 @@
 /*Description
 1. Root settings
 2. Body, html settings
-3. Navbar
-4.
+3. Buttons
+4. Navbar
 5.
 6.
 7.
@@ -45,3 +45,93 @@ body, html{
     background-color: var(--five);
 }
 /*Above validated 2022-09-08 10:52*/
+
+/*3. Buttons*/
+
+/*Button 1*/
+.btn {
+    border: none;
+    background-color:var(--six);
+    /*Makes the corner softer*/
+    border-radius:8px;
+    display:inline-block;
+    /*Makes the cursor integrate and makes it pointer*/
+    cursor:pointer;
+    color: var(--white);
+    font-size:20px;
+    font-weight:bold;
+    padding:13px 32px;
+    text-decoration:none;    
+}
+/*Button 2*/
+.btn2 {
+    border: none;
+    background-color:var(--black);
+    border-radius:8px;
+    display:inline-block;
+    cursor:pointer;
+    color: var(--white);
+    font-size:20px;
+    font-weight:bold;
+    padding:13px 32px;
+    text-decoration:none;
+}
+/*Above validated 2022-09-08 11:02*/
+
+/*4. Navbar*/
+/*Navbar with flex method*/
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    height: 8vh;
+    width: 100%;
+    position: fixed;
+    align-items: center;
+    margin: 0 auto;
+    background-color: var(--four);
+    /*Placing objects in order/ layers*/
+    z-index: 999;
+    top:0;
+    left:0;
+    /*Animate a transition*/
+    transition: 0.3s ease-in-out;
+}
+
+/*Logo/ title settings*/
+.brand-title{
+    font-size: 1.5rem;
+    color: var(--white);
+    font-weight: bold;
+    margin-left: 2vw;
+}
+
+/*Clarify that the background on the links is the same color as the navbar*/
+.navbar-links{
+    height: 100%;
+    background-color: var(--four);
+}
+
+/*Adjusting the link settings*/
+.navbar-links ul{
+    display: flex;
+    padding:0;
+    margin-top: 3vh;
+}
+
+/*This removes the style of the list*/
+.navbar-links li{
+    list-style: none;
+}
+
+/*Adjusting the link-style <a>-element*/
+.navbar-links li a{
+    text-decoration: none;
+    color: var(--white);
+    padding: 0.5rem;
+    margin: 2vw;
+}
+
+.navbar-links li:hover{
+    font-weight: 900;
+    text-decoration: underline;
+}
