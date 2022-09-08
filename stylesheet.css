@@ -18,8 +18,8 @@
     box-sizing: border-box;
     /*Declaring colors on the website
     -- <-- this is declaring a variable
-    after -- is the name of the variable
-    after : is the value
+    after -- is the name of the variable --myVariable
+    after myVariable: is the value
     */
     --one: #026873;
     --two: #0596A6;
@@ -30,5 +30,18 @@
     --six: #726651;
     --white: #ffffff
 }
+/*Above validated 2022-09-08 10:33*/
 
-/* validated 2022-09-08 10:33*/
+/*2. Body, html settings*/
+
+body, html{
+    /*this settings will make the content stretch out to fill the web browser window. No invisible borders n shit*/
+    margin:0;
+    padding: 0;
+    /* no overflow, no scrolling horizontal*/
+    overflow-x: hidden;
+    height: 100%;
+    /*To use variables declaring in css, use var(--myVariable)*/
+    background-color: var(--five);
+}
+/*Above validated 2022-09-08 10:52*/
