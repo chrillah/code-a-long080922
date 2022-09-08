@@ -310,6 +310,23 @@ body, html{
 
 /*Responsive grids*/
 @media screen and (max-width: 550px){
+    .testimonial-grid-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 4fr;
+        row-gap: 5vh;
+        grid-template-areas:
+        "comment1"
+        "comment2"
+        "comment4"
+        "comment3";
+    }
 
-    
+    #comment1,
+    #comment2,
+    #comment3,
+     #comment4{
+        height:70vh;
+    }
 }
+
+/*Above validated 2022-09-08 15:05*/
