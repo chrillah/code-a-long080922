@@ -233,3 +233,12 @@ body, html{
     margin-top: 5vw;
 }
 /*Above validated 2022-09-08 13:55*/
+
+/*Adjusting image height to fit all screens on all devices, top to down*/
+@media only screen and (max-width: 550px){
+    .hero-image{
+        height: 140vh;
+    }
+}
+
+/*Above validated 2022-09-08 14:12*/
