@@ -190,8 +190,10 @@ body, html{
         padding: .05rem 1rem;
     }
 
+    /*IN JAVASCRIPT, this will toggle the hamburger menu- when active*/
     .navbar-links.active{
         display: flex;
+        height: 20vh;
     }
 
     .brand-title{
