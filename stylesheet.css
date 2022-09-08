@@ -8,7 +8,7 @@
 4. Navbar
 5. Hero section (Hero Image)
 6. Testimonial Section
-7.
+7. Slideshow
 */
 
 /* 1. Root settings*/
@@ -333,3 +333,58 @@ body, html{
 }
 
 /*Above validated 2022-09-08 15:05*/
+
+/*7. Slideshow*/
+/*The container term is equal to a real container, inside you have all elements or objects*/
+.slideshow-container{
+    width: 80%;
+    /*Relative to all things around*/
+    position: relative;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 5vh;
+    background-color: var(--white);
+    height: 90vh;
+    border-radius: 10px;
+}
+
+/*Adjusting the image to fit inside the slideshow container*/
+.slideshow-container img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 50px 50px;
+    border-radius: 5px;
+    width:80%;
+}
+
+/*Hiding the slides, and the showing them by JS code*/
+.slides{
+    display: none;
+}
+
+/*Slides titles, inside the slider*/
+.slides-header{
+    font-size: 2rem;
+}
+
+/*Adjusting both the title and text inside the slide*/
+.slides-header, .slides-text{
+    text-align: center;
+}
+
+/*Fading animation*/
+.fade{
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from{
+        opacity: 0.4
+    }
+    to{
+        opacity: 1
+    }
+}
