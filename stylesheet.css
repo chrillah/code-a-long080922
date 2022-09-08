@@ -6,8 +6,8 @@
 2. Body, html settings
 3. Buttons
 4. Navbar
-5. Hero section
-6.
+5. Hero section (Hero Image)
+6. Testimonial Section
 7.
 */
 
@@ -242,3 +242,44 @@ body, html{
 }
 
 /*Above validated 2022-09-08 14:12*/
+
+/*6. Testimonial Section */
+/*Grid section*/
+.testimonial-grid-container{
+    /**/
+    display: grid;
+    /*Specify number of columns. the repeat value multiplies the number of column. 1fr means 1 fraction*/
+    grid-template-columns: repeat(4, 1fr);
+    /*Specify the number of rows*/
+    grid-auto-rows: 1fr 1fr;
+    gap:20px;
+    row-gap: 10vh;
+
+    /*Grid-area*/
+    grid-template-areas: 
+    "comment1 comment1 comment2 comment2"
+    "comment3 comment3 comment4 comment4";
+}
+
+/**/
+#comment1{
+    /*This make */
+    grid-area: comment1;
+    border-radius: 8px;
+    background-image: url(img/family.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#comment2{
+    grid-area: comment2;
+    background-color: var(--two);
+    border-radius: 8px;
+    text-align: center;
+    align-items: center;
+    padding-top: 20px;
+    color: var(--white);
+}
+/*Above validated 2022-09-08 14:36*/
+
