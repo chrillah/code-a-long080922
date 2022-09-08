@@ -75,6 +75,7 @@ body, html{
     font-weight:bold;
     padding:13px 32px;
     text-decoration:none;
+    margin-top: 2vh;
 }
 /*Above validated 2022-09-08 11:02*/
 
@@ -254,7 +255,7 @@ body, html{
     grid-auto-rows: 1fr 1fr;
     gap:20px;
     row-gap: 10vh;
-    margin-left: 10vh;
+    /*margin-left: 10vh;*/
     margin-top: 10vh;
     height: 120vh;
     /*Grid-area*/
@@ -312,7 +313,7 @@ body, html{
 @media screen and (max-width: 550px){
     .testimonial-grid-container{
         grid-template-columns: 1fr;
-        grid-template-rows: 4fr;
+        grid-template-rows: auto;
         row-gap: 5vh;
         grid-template-areas:
         "comment1"
@@ -324,8 +325,10 @@ body, html{
     #comment1,
     #comment2,
     #comment3,
-     #comment4{
+    #comment4{
         height:70vh;
+        margin: 0 .5rem;
+        padding: 20px;
     }
 }
 
