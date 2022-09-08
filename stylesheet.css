@@ -246,15 +246,17 @@ body, html{
 /*6. Testimonial Section */
 /*Grid section*/
 .testimonial-grid-container{
-    /**/
+    /*Makes this section to a grid/section*/
     display: grid;
-    /*Specify number of columns. the repeat value multiplies the number of column. 1fr means 1 fraction*/
+    /*Specify number of columns. The repeat value multiplies the number of column. 1fr means 1 fraction*/
     grid-template-columns: repeat(4, 1fr);
     /*Specify the number of rows*/
     grid-auto-rows: 1fr 1fr;
     gap:20px;
     row-gap: 10vh;
-
+    margin-left: 10vh;
+    margin-top: 10vh;
+    height: 120vh;
     /*Grid-area*/
     grid-template-areas: 
     "comment1 comment1 comment2 comment2"
@@ -263,7 +265,7 @@ body, html{
 
 /**/
 #comment1{
-    /*This make */
+    /*Name this section to match the grid-area-template*/
     grid-area: comment1;
     border-radius: 8px;
     background-image: url(img/family.jpg);
@@ -283,3 +285,31 @@ body, html{
 }
 /*Above validated 2022-09-08 14:36*/
 
+#comment2 h2, #comment3 h2{
+    margin-top: 10vh;
+}
+
+#comment3{
+    grid-area: comment3;
+    background-color: var(--two);
+    border-radius: 8px;
+    text-align: center;
+    align-items: center;
+    padding-top: 20px;
+    color: var(--white);
+}
+
+#comment4{
+    grid-area: comment4;
+    border-radius: 8px;
+    background-image: url(img/office-820390_1920.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*Responsive grids*/
+@media screen and (max-width: 550px){
+
+    
+}
